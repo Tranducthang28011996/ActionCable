@@ -1,0 +1,5 @@
+<%= link_to "NewRoom", new_room_path, class: "btn btn-danger"%>
+<hr>
+<% @rooms.each do |room| %>
+  <%= link_to room.name, room_path(room) %>
+<% end %>
